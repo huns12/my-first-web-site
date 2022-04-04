@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--글꼴-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inconsolata:wght@300&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Han+Sans&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    <title>CAFE(수정2)</title>
+    <script src="TP_coffee_cafe.js"></script>
+    <link rel="stylesheet" href="TP_coffee_cafe.css">
+    <link rel="Stylesheet" href="TP_coffee_main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!-- top Area -->
+    <header class="header">
+        <!--logo(Button)-->
+        <nav class="logoArea">
+            <a href="TP_coffee_main.html">CIP
+            </a>    
+        </nav>
+
+        <!--menu list-->
+
+        <nav class='menu'>
+            <li><a href="TP_coffee_about.html">ABOUT COFFEE</a></li>
+            <li><a href="TP_coffee_cafe.html">CAFE</a></li>
+            <li><a href="TP_coffee_best.html">BEST</a></li>
+        </nav>
+            
+        <!--login Button-->
+        <nav class='sign' id='sign'>
+            <a href="TP_coffee_login.html">
+                <img src="sign.png" height=30px> 
+            </a>
+        </nav>
+
+    </header><!-- class(top_wrap) End -->
+
+    <!-- banner -->
+    <article class="banner"></article>
+    
+    <!--Middle Space-->
+    <section class='middle_wrap'>
+        <section class="cafe_middle_wrap">
+            <div id="checkForm">
+                <p>지역선택</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="checkoff" id="seoulCheck" onclick="
+                    seoulLocation(this);">
+                <label class="form-check-label" for="flexCheckDefault">서울지역</label>
+            </div>
+            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="checkoff" id="gyeonggiCheck" onclick="
+                gyeonggiLocation(this);">
+                <label class="form-check-label" for="flexCheckDefault">경기지역</label>
+            </div>
+        </section>
+                        
+        <!-- cafe 속성 : 로고 이미지, 이름, 주소, 원두, 전화번호 -->
+        <!-- 원두 종류 : 에티오피아, 과테말라, 케냐, 브라질, 아라비카 -->
+        <div class="new_line"></div>
+            <section id="seoulBox">
+                <h1>서울지역</h1>
+                <div class="cafe_list">
+                    <div class="cafe">
+                        <a href="https://www.milestonecoffee.kr/"><img src="서울 카페 이미지/마일스톤.png" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">마일스톤 커피</div>
+                        <div class="cafe_address">서울특별시 강남구 논현로159</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">070-4219-1195</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/cafearchivist/"><img src="서울 카페 이미지/아키비스트.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">아키비스트</div>
+                        <div class="cafe_address">서울특별시 종로구 효자로13길 52</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-738-1517</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="http://www.mangoplate.com/restaurants/EjvU1nvQ_dh-"><img src="서울 카페 이미지/카멜커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">카멜커피 더현대 서울</div>
+                        <div class="cafe_address">서울특별시 여의대로 108</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-3277-0758</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://coffeeandcigarettes.kr/"><img src="서울 카페 이미지/커피앤시가렛.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">커피앤시가렛</div>
+                        <div class="cafe_address">서울특별시 중구 서소문로 116</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-777-7557</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/manhole_coffee/?utm_medium=copy_link"><img src="서울 카페 이미지/맨홀커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">맨홀커피</div>
+                        <div class="cafe_address">서울특별시 영등포구 영신로 247</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-6398-9427</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="http://leesarcoffee.com/"><img src="서울 카페 이미지/리사르커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">리사르커피 청담점</div>
+                        <div class="cafe_address">서울특별시 강남구 도산대로99길 60</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">010-9646-5538</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/alver_coffee/"><img src="서울 카페 이미지/알베르.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">알베르</div>
+                        <div class="cafe_address">서울특별시 강남구 강남대로102길 34</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-566-6181</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.diningcode.com/profile.php?rid=oYQRus2gMpMq"><img src="서울 카페 이미지/태양커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">태양커피</div>
+                        <div class="cafe_address">서울특별시 서초구 서초대로25길 55</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-534-8180</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://blog.naver.com/designpodium"><img src="서울 카페 이미지/프로퍼커피바.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">프로퍼커피바</div>
+                        <div class="cafe_address">서울특별시 송파구 위례성대로22길 6</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-3401-0703</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://smartstore.naver.com/coffeeshopdongkyung"><img src="서울 카페 이미지/카페가게동경.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">카페가게동경</div>
+                        <div class="cafe_address">서울특별시 마포구 망원로6길 21</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">070-4845-0619</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://fritz.co.kr/?NaPm=ct%3Dl1iuh8ai%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3D0bf1a2fd76b20f75e026d4a5c809b5c8c1115fa5"><img src="서울 카페 이미지/프릳츠.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">프릳츠 원서점</div>
+                        <div class="cafe_address">서울특별시 종로구 율곡로 83</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-747-8101</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://anthracitecoffee.com/"><img src="서울 카페 이미지/앤트러사이트.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">앤트러사이트 합정점</div>
+                        <div class="cafe_address">서울특별시 마포구 토정로5길 10</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">02-336-7850</div>
+                    </div>
+                </div>
+            </section>
+            <div class="new_line"></div>
+            <section id="gyeonggiBox">
+                <h1>경기지역</h1>
+                <div class="cafe_list">
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/yuuncoffee/"><img src="경기 카페 이미지/유운커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">유운커피</div>
+                        <div class="cafe_address">경기도 용인시 처인구 포곡읍 곡현로122</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">031-333-6611</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="http://www.mangoplate.com/restaurants/e1qWMtL78G"><img src="경기 카페 이미지/더츠커피팩토리.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">더츠커피팩토리</div>
+                        <div class="cafe_address">경기도 고양시 덕양구 행주산성로120번길</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">031-972-5566</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/sims_coffee_/"><img src="경기 카페 이미지/심스커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">심스커피</div>
+                        <div class="cafe_address">경기도 안양시 동안구 동편로183번길 12</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">070-4136-8129</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/parea_coffee/"><img src="경기 카페 이미지/페리아커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">페리아커피</div>
+                        <div class="cafe_address">경기도 남양주시 와부읍 팔당로81번길 88-3</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">010-3929-0714</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/darame_coffee/?igshid=1wqk5rjquaoh3+instagram.com/"><img src="경기 카페 이미지/다람이커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">다람이커피</div>
+                        <div class="cafe_address">경기도 용인시 처인구 모현읍 갈월로 172</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">010-9430-3569</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="http://www.wkcoffee.com/"><img src="경기 카페 이미지/워터킹커피로스터스.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">워터킹커피로스터스</div>
+                        <div class="cafe_address">경기도 시흥시 금화로332번길 13-26</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">031-411-0655</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://jungjiyoungcoffee.com/?NaPm=ct%3Dl1iunzx5%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3D5d7212c080eaed06b383d4302d49a5b0e113bff4"><img src="경기 카페 이미지/정지영커피로스터즈.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">정지영 커피로스터즈</div>
+                        <div class="cafe_address">경기도 수원시 팔달구 신풍로 42</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">070-7537-0091</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://masil.lifeapp.kr/"><img src="경기 카페 이미지/마실커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">마실커피</div>
+                        <div class="cafe_address">경기 용인시 수지구 풍덕천로148번길</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">031-263-4561</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="http://www.marinecoffee.co.kr/default/"><img src="경기 카페 이미지/마린커피.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">마린커피</div>
+                        <div class="cafe_address">경기도 수원시 영통구 광교중앙로248번길</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">070-7798-2339</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://terarosa.com/?NaPm=ct%3Dl1iuq2mo%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3Ddc8f13ecbee9c902040d90509df164392211a5d2"><img src="경기 카페 이미지/테라로사.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">테라로사 동탄호수점</div>
+                        <div class="cafe_address">경기도 화성시 동탄대로 181</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">033-648-2760</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://blog.naver.com/NBlogTop.naver?isHttpsRedirect=true&blogId=p9932326"><img src="경기 카페 이미지/커피트레인.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">커피트레인</div>
+                        <div class="cafe_address">경기 의왕시 왕송못서길 32</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">031-462-1511</div>
+                    </div>
+                    <div class="cafe">
+                        <a href="https://www.instagram.com/team_vonzrr/"><img src="경기 카페 이미지/본지르르.jpg" class="cafe_coffee_img"></a>
+                        <div class="cafe_name">vonzrr</div>
+                        <div class="cafe_address">경기도 수원시 팔달구 정조로 838</div>
+                        <div class="cafe_bean">에티오피아</div>
+                        <div class="cafe_phone_number">010-5437-4398</div>
+                    </div>
+                </div>
+            </section>
+        
+    </section> <!--middle wrap end-->
+
+
+    <footer class="bottom_wrap">
+        <hr class="bottom_wrap_line">
+        <div class='sns'>
+            <a href="https://naver.com">
+            <img src='facebook.png' height=30px> 
+            </a>
+            <a href="https://naver.com">
+            <img src='insta.png' height=30px>
+            </a>
+            <a href="https://naver.com">
+            <img src='email.png' height=30px>
+            </a>
+            <a href="https://naver.com">
+            <img src='youtube.png' height=30px>
+            </a>
+        </div>
+    
+        <div class='introduction'>
+            <li id='introduction_1'>
+                상호명: (주)Coffee Introduce Platform | 대표: 휴먼2조 | 개인정보보호책임자: 휴먼2조 <br>
+                사업자등록번호: 123-45-678910 | 통신판매업신고번호: 제2022-경기수원-00000호<br>
+                사업장소재지: 경기 수원시 팔달구 테헤란로2길 27 패스트파이브 빌딩 9층 915호<br>
+            </li>
+            <li id='introduction2'>
+                주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+            </li>
+        </div>
+    </footer>
+
+    <script src="TP_coffee_cafe.js"></script>
+    <script>
+        //회원가입 페이지에서 가져온 사용자 이름
+        var username=document.createElement('span')
+        username.innerHTML=localStorage.getItem('inputname')+"님";
+        username.classList.add('userID')
+        document.getElementById('sign').appendChild(username);
+
+    </script>
+</body>
+
+</html>
