@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="TP_coffee_about.css"></link>
+    <link rel="stylesheet" href="TP_coffee_main.css"></link>
+    <!--글꼴-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inconsolata:wght@300&family=Jua&family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- main과 동일-->
+    <header class='header'>
+        
+        <div class="logoArea">
+            <a href="TP_coffee_main.html">CIP</a>    
+        </div>
+
+        <div class='menu'>
+            <li><a href="TP_coffee_about.html">ABOUT COFFEE</a></li>
+            <li><a href="TP_coffee_cafe.html">CAFE</a></li>
+            <li><a href="TP_coffee_best.html">BEST</a></li>
+        </div>
+
+
+        <div class='sign' id='sign'>
+            <a href="TP_coffee_login.html">
+                <img src="sign.png" height=30px>
+            </a>
+        </div>
+
+    </header>
+    
+    <!-- middles section-->
+    <section class="middle_wrap">
+
+        <div class="middle_about_wrap" style="background-size: cover">
+            <!-- 선택 기능 부분-->
+            <div class="middle_about_tabs">
+                <input type="radio" name = "tabmenu" id="tab01" onclick="tabVisible()" checked>
+                <label for="tab01" >BEANS</label>
+                <input type="radio" name = "tabmenu" id="tab02" onclick="tabVisible()">
+                <label for="tab02">ICE</label>
+                <input type="radio" name = "tabmenu" id="tab03" onclick="tabVisible()">
+                <label for="tab03">ESPRESSO EXTRACTION</label>
+            </div>
+            <!-- 내용 부분-->
+            <div class="tabcon_wrap">    
+                <div class="tabcon con1" id="tab01">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam accusamus sed illo numquam animi at deserunt magni minima quibusdam nostrum vero tempore corrupti soluta blanditiis atque possimus, non odio. Possimus consequatur nulla corporis, earum quia temporibus error ratione voluptatum fuga dolores doloremque veritatis perferendis modi. Cupiditate repellat voluptatibus nostrum.</div>
+                <div class="tabcon con2" id="tab02">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nemo recusandae facere similique? Blanditiis error architecto facere odit sed iure ab dolores vel omnis provident amet est iusto, delectus ipsa?</div>
+                <div class="tabcon con3" id="tab03">에스프레소 커피 추출
+                    에스프레소(Espresso)라는 말은 이탈리아어로 ‘속도가 빠른’이란 뜻입니다. 사실 에스프레소는 빠른 속도 덕분에 대세가 된 커피 추출 방법입니다. 전 세계 커피전문점에서 파는 약 90% 정도의 커피가 에스프레소를 기반으로 하고 있습니다. 가장 대표적인 예를 들어보자면, 에스프레소에 물을 넣은 것이 아메리카노이고, 우유를 뜨겁게 해서 섞은 것이 카페라떼 입니다. 에스프레소 자체만으로도 다양한 메뉴가 있습니다. 리스트레또(Ristretto), 에스프레소(Espresso), 룽고(Lungo), 도피오(Dopio)가 양으로 구분한 에스프레소 메뉴입니다.
+                    
+                    에스프레소 커피는 압력이 가해진 뜨거운 물을, 가늘게 분쇄하여 압축한 커피층에 통과시켜 추출한 커피입니다. 다시 말해 에스프레소는 높은 온도와 높은 압력을 가진 수증기를 이용하여 빠르게 커피 성분을 추출하는 방식입니다. 커피 추출원리에서도 여러 차례 말씀드렸듯이, 에스프레소 커피 추출에서 커피 향기와 맛에 영향을 주는 요소는 커피원두의 분쇄도, 물의 온도, 에스프레소 머신의 압력, 그리고 추출 시간입니다.</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- main과 동일-->
+    <footer class="bottom_wrap">
+
+        <div class='sns'>
+            <a href="https://naver.com">
+            <img src='facebook.png' height=30px> 
+            </a>
+            <a href="https://naver.com">
+            <img src='insta.png' height=30px>
+            </a>
+            <a href="https://naver.com">
+            <img src='email.png' height=30px>
+            </a>
+            <a href="https://naver.com">
+            <img src='youtube.png' height=30px>
+            </a>
+        </div>
+    
+        <div class='introduction'>
+            <li id='introduction_1'>
+            상호명: (주)Coffee Introduce Platform | 대표: 휴먼2조 | 개인정보보호책임자: 휴먼2조 <br>
+            사업자등록번호: 123-45-678910 | 통신판매업신고번호: 제2022-경기수원-00000호<br>
+            사업장소재지: 경기 수원시 팔달구 테헤란로2길 27 패스트파이브 빌딩 9층 915호<br>
+            </li>
+            
+            <li id='introduction2'>
+            주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+            </li>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="TP_coffee_about.js"></script>    
+    <script>
+        //회원가입 페이지에서 가져온 사용자 이름
+        var username=document.createElement('span')
+        username.innerHTML=localStorage.getItem('inputname')+"님";
+        username.classList.add('userID')
+        document.getElementById('sign').appendChild(username);
+
+    </script>
+</body>
+</html>

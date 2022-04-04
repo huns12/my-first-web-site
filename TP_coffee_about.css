@@ -1,0 +1,103 @@
+/* ABOUT COFFEE */
+
+.middle_about_wrap{
+
+    position:relative;
+
+    background-size:width=100%;
+    height:1000px;
+    width:100%;
+    display: flex;
+
+}
+/* radio 점 제거 */
+.middle_about_wrap > .middle_about_tabs > input[type = "radio"]{
+    display: none; 
+}
+
+.middle_about_wrap > .middle_about_tabs > input[type = "radio"] + label{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 40vh;
+    height: 33.3%;
+
+    /* 텍스트 가운데정렬 */
+    align-items: center;
+    justify-content: center;
+    
+    background: brown;
+    color: wheat;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+a{
+    color: wheat;
+    text-decoration: none;
+
+}
+.middle_about_wrap > .middle_about_tabs > input[type="radio"][id = "tab01"]:checked + label{
+        /* 텍스트 가운데정렬 */
+
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    border-right: 0px;
+
+    /*opacity 투명도 조정 */
+    opacity: 0.9;   
+
+    text-decoration: none;
+}
+.middle_about_wrap > .middle_about_tabs > input[type="radio"][id = "tab02"]:checked + label{
+    /* 텍스트 가운데정렬 */
+align-items: center;
+justify-content: center;
+background-color: transparent;
+
+border-right: 0px;
+
+/*opacity 투명도 조정 */
+opacity: 0.9;   
+
+text-decoration: none;
+}
+.middle_about_wrap > .middle_about_tabs > input[type="radio"][id = "tab03"]:checked + label{
+    /* 텍스트 가운데정렬 */
+align-items: center;
+justify-content: center;
+background-color: transparent;
+
+border-right: 0px;
+
+/*opacity 투명도 조정 */
+opacity: 0.9;   
+
+text-decoration: none;
+
+}
+
+.middle_about_wrap > .middle_about_tabs > .tabcon_wrap{
+    align-items: center;
+    justify-content: center;
+}
+
+.middle_about_wrap > .tabcon_wrap > .tabcon{
+
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* background: #6667AB; */
+    display : none;
+    color : white;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+
+    /* border: 1px solid #000; */
+
+}
